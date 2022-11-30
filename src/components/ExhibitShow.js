@@ -74,15 +74,9 @@ const ExhibitShow = ({ user, msgAlert }) => {
             })
     }
 
-    // logical &&
-    // both sides of this check NEED to be truthy values = true
-    // logical ||
-    // only one side of this check needs to be truthy = true
-
-    // oneliner
     if (deleted) navigate('/exhibits')
     // if (deleted) {
-    //     navigate('/pets')
+    //     navigate('/exhibits')
     // }
 
     return (
@@ -102,26 +96,18 @@ const ExhibitShow = ({ user, msgAlert }) => {
                     <ListGroup.Item>{exhibit.museum}</ListGroup.Item>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
+                <button onClick={toggleShowUpdate}>Toggle Update</button>
+                {isUpdateShown && (
+					<ExhibitUpdate
+						exhibit={exhibit}
+						handleChange={handleChange}
+						handleUpdateExhibit={handleUpdateExhibit}
+					/>
+				)}
+                <button onClick={handleDeleteExhibit} >Delete</button>
                 </Card.Body>
             </Card>
         </div>
-        // <>
-        // 	<p>Name: {exhibit.name}</p>
-        // 	<p>date: {exhibit.date}</p>
-        // 	<p>artist: {exhibit.artist}</p>
-        // 	<p>museum: {exhibit.museum}</p>
-        // 	<button onClick={toggleShowUpdate}>Toggle Update</button>
-        // 	{isUpdateShown && (
-        // 		<ExhibitUpdate
-        // 			exhibit={exhibit}
-        // 			handleChange={handleChange}
-        // 			handleUpdateExhibit={handleUpdateExhibit}
-        // 		/>
-        // 	)}
-        //     <button onClick={handleDeleteExhibit} >Delete</button>
-        // </>
     )
 }
 

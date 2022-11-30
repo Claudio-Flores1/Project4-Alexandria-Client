@@ -14,6 +14,7 @@ import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 import ExhibitIndex from './components/ExhibitIndex'
 import ExhibitShow from './components/ExhibitShow'
+import ExhibitCreate from './components/ExhibitCreate'
 
 const App = () => {
 
@@ -81,6 +82,13 @@ const App = () => {
 					element={
 						<RequireAuth user={user}>
 							<ExhibitShow msgAlert={msgAlert} user={user} />
+						</RequireAuth>}
+				/>
+				<Route
+					path='/exhibits/new'
+					element={
+						<RequireAuth user={user}>
+							<ExhibitCreate msgAlert={msgAlert} user={user} />
 						</RequireAuth>}
 				/>
 			</Routes>

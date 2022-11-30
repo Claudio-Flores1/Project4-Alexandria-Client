@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { exhibitIndex } from '../api/exhibit'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
+
 
 const ExhibitIndex = ({ user, msgAlert }) => {
 

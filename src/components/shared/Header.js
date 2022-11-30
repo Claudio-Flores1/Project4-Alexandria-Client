@@ -54,7 +54,12 @@ const Header = ({ user }) => (
 		}
 		<Navbar.Toggle aria-controls='basic-navbar-nav' className='me-4'/>		
 		<Navbar.Collapse id='basic-navbar-nav'>
-			<Nav className='nav justify-content-end me-5 nav-link' style={{ width: "100%" }}>				
+			<Nav className='nav justify-content-end me-5 nav-link' style={{ width: "100%" }}>
+			<Nav.Item className="ms-4">
+					<Nav.Link eventKey="1" as={Link} to='/exhibits/new' className="nav-item">
+						Add an Exhibit
+					</Nav.Link>
+				</Nav.Item>				
 				<Nav.Item className="ms-4">
 					<Nav.Link eventKey="1" as={Link} to='/exhibits' className="nav-item">
 						Exhibits

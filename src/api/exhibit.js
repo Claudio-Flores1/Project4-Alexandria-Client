@@ -37,7 +37,7 @@ export const exhibitShow = (user, id) => {
 export const exhibitUpdate = (data, user, id) => {
 	return axios({
 		method: 'PATCH',
-		url: apiUrl + '/exhibits/' + id,
+		url: apiUrl + `/exhibits/${id}`,
 		data: {
 			exhibit: data,
 		},
