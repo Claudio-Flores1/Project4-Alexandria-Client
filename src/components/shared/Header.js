@@ -43,19 +43,23 @@ const alwaysOptions = (
 )
 
 const Header = ({ user }) => (
-	<Navbar bg='primary' variant='dark' expand='md'>
+	<Navbar collapseOnSelect={true} className='nav-bar p-0' variant='dark' expand='xl'>
 		<Navbar.Brand>
-            <Link to='/' style={linkStyle}>
-                react-auth-template
+            <Link to='/exhibits' className="ms-3 site-name">
+                Alexandria
             </Link>
         </Navbar.Brand>
-		<Navbar.Toggle aria-controls='basic-navbar-nav' />
+		{user && 
+			<span className='welcome-nav item ms-1'>Welcome, {user.email}</span>
+		}
+		<Navbar.Toggle aria-controls='basic-navbar-nav' className='me-4'/>		
 		<Navbar.Collapse id='basic-navbar-nav'>
-			<Nav className='ml-auto'>
-				{user && (
-					<span className='navbar-text mr-2'>Welcome, {user.email}</span>
-				)}
-				{alwaysOptions}
+			<Nav className='nav justify-content-end me-5 nav-link' style={{ width: "100%" }}>				
+				<Nav.Item className="ms-4">
+					<Nav.Link eventKey="1" as={Link} to='/exhibits' className="nav-item">
+						Exhibits
+					</Nav.Link>
+				</Nav.Item>
 				{user ? authenticatedOptions : unauthenticatedOptions}
 			</Nav>
 		</Navbar.Collapse>
