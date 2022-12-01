@@ -33,7 +33,7 @@ const ExhibitShow = ({ user, msgAlert }) => {
     }
 
     const handleChange = (event) => {
-        setExhibit({ ...exhibit, [event.target.name]: event.target.value })
+        setExhibit({ ...exhibit, [event.target.name] : event.target.value })
     }
 
     const handleUpdateExhibit = () => {
