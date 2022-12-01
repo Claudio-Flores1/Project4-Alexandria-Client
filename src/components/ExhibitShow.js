@@ -33,7 +33,7 @@ const ExhibitShow = ({ user, msgAlert }) => {
     }
 
     const handleChange = (event) => {
-        setExhibit({ ...exhibit, [event.target.name] : event.target.value })
+        setExhibit({ ...exhibit, [event.target.name]: event.target.value })
     }
 
     const handleUpdateExhibit = () => {
@@ -96,15 +96,15 @@ const ExhibitShow = ({ user, msgAlert }) => {
                     <ListGroup.Item>{exhibit.museum}</ListGroup.Item>
                 </ListGroup>
                 <Card.Body>
-                <button onClick={toggleShowUpdate}>Toggle Update</button>
-                {isUpdateShown && (
-					<ExhibitUpdate
-						exhibit={exhibit}
-						handleChange={handleChange}
-						handleUpdateExhibit={handleUpdateExhibit}
-					/>
-				)}
-                <button onClick={handleDeleteExhibit} >Delete</button>
+                    <button onClick={toggleShowUpdate}>Toggle Update</button>
+                    {isUpdateShown && (
+                        <ExhibitUpdate
+                            exhibit={exhibit}
+                            handleChange={handleChange}
+                            handleUpdateExhibit={handleUpdateExhibit}
+                        />
+                    )}
+                    <button onClick={handleDeleteExhibit} >Delete</button>
                 </Card.Body>
             </Card>
         </div>

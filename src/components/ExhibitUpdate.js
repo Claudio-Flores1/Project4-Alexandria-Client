@@ -20,7 +20,7 @@ const ExhibitUpdate = ({ exhibit, handleChange, handleUpdateExhibit }) => {
              <input 
             // type='text' 
             value={exhibit.artist}
-            placeholder='https://i.imgur.com/exhibitImage.jpg'
+            placeholder='Artist'
             name='artist' 
             onChange={handleChange} 
             />

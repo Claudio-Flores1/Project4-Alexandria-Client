@@ -15,6 +15,7 @@ import ChangePassword from './components/auth/ChangePassword'
 import ExhibitIndex from './components/ExhibitIndex'
 import ExhibitShow from './components/ExhibitShow'
 import ExhibitCreate from './components/ExhibitCreate'
+// import CreateExhibitModal from './components/ExhibitCreate'
 
 const App = () => {
 
