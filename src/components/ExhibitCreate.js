@@ -55,30 +55,35 @@ function CreateExhibitModal(props) {
                     <input
                         type='text'
                         value={exhibit.name}
+                        placeholder="Name"
                         name='name'
                         onChange={handleChange}
                     />
                     <input
                         type='text'
                         value={exhibit.date}
+                        placeholder="Date"
                         name='date'
                         onChange={handleChange}
                     />
                     <input
                         type='text'
                         value={exhibit.picture}
+                        placeholder="Link to Picture"
                         name='picture'
                         onChange={handleChange}
                     />
                     <input
                         type='text'
                         value={exhibit.artist}
+                        placeholder="Artist"
                         name='artist'
                         onChange={handleChange}
                     />
                     <input
                         type='text'
                         value={exhibit.museum}
+                        placeholder="Museum"
                         name='museum'
                         onChange={handleChange}
                     />
