@@ -4,28 +4,25 @@ const ExhibitUpdate = ({ exhibit, handleChange, handleUpdateExhibit }) => {
 	return (
 		<>
 			<input 
-            // type='text'
             value={exhibit.name}
             placeholder='Exhibit Name'
             name='name' 
             onChange={handleChange} 
             />
 			<input 
-            // type='text'
             value={exhibit.date}
             placeholder='Dates it was created'
             name='date' 
             onChange={handleChange} 
             />
              <input 
-            // type='text' 
+             
             value={exhibit.artist}
             placeholder='Artist'
             name='artist' 
             onChange={handleChange} 
             />
-            <input 
-            // type='text' 
+            <input  
             value={exhibit.picture}
             placeholder='https://i.imgur.com/exhibitImage.jpg'
             name='picture' 

@@ -24,10 +24,15 @@ function CreateExhibitModal(props) {
         setExhibit({ ...exhibit, [event.target.name]: event.target.value })
     }
 
+    function refreshPage() {
+        window.location.reload(false);
+      }
+
     const handleCreateExhibit = (e) => {
         e.preventDefault()
         exhibitCreate(exhibit, user)
             .then(() => {
+                refreshPage()
                 triggerRefresh()
                 handleClose()
             })

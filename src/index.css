@@ -17,7 +17,7 @@ code {
 }
 
 .nav-bar {
-  background-color: lightslategrey
+  background-color: rgb(34, 61, 142);
 }
 
 .site-name {
@@ -30,7 +30,7 @@ code {
 }
 
 .site-name:hover {
-  color: goldenrod;
+  color: rgb(255, 163, 16);
 }
 
 .welcome-nav {
@@ -46,10 +46,11 @@ code {
   color: goldenrod;
 }
 
-.ms-4{
+.ms-4 {
   display: flex;
   align-items: center;
 }
+
 .form-label {
   margin-top: 10px;
 }
@@ -58,7 +59,7 @@ form>div {
   margin-bottom: 10px;
 }
 
-form>button{
+form>button {
   margin-top: 10px;
 }
 
@@ -87,12 +88,28 @@ form>button{
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 20px;
   padding: 10px;
-  width: 310px;
-  min-height: 300px;
-  max-height: 340px;
-  transform: translateX(215%);
+  height: auto;
+}
+
+.card-body>button {
+  border: solid 2px #404040;
+  color: #404040;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin: 5px;
+  width: 200px;
+}
+
+.list-group-item {
+  text-align: center;
+}
+
+.card-body>input {
+  width: 75%;
+  margin: 5px;
 }
 
 .exhibit-card-container {
@@ -120,8 +137,8 @@ form>button{
 }
 
 .exhibit-button:hover {
-  background: rgb(170, 168, 163);
-  color: #404040;
+  background: rgb(34, 61, 142);
+  color: white;
   cursor: pointer;
 }
 
@@ -138,9 +155,9 @@ form>button{
 
 .create-exhibit>.card-body {
   width: 100vw;
-  background-color: #909090;
+  background-color:  rgb(34, 61, 142);
   color: white;
-
+  border:none ;
 }
 
 .card-body {
@@ -169,4 +186,9 @@ form>button{
 .modal-body>button {
   border-radius: 5px;
   margin-top: 5px;
+}
+
+.home-image {
+  justify-content: center;
+
 }
