@@ -84,6 +84,22 @@ form>button {
   line-height: 1.7;
 }
 
+.ms-4{
+  text-decoration: none;
+}
+
+.ms-4>button {
+  border: solid 2px #404040;
+  background-color:  rgb(34, 61, 142);
+  color:white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin: 5px;
+  width: 200px;
+}
+
 .exhibit-card {
   justify-content: center;
   display: flex;
