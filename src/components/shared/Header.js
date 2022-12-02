@@ -2,27 +2,13 @@ import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom'
-import CreateExhibitModal from '../CreateModal'
 
 const linkStyle = {
 	color: 'white',
 	textDecoration: 'none',
 	paddingRight: '5px',
-    paddingLeft: '5px'
+	paddingLeft: '5px'
 }
-
-// class Navbar extends React.Component{
-// 	state = {
-// 	   modalOpen: false
-// 	}
-  
-// 	handleModalOpen = () => {
-// 	   this.setState((prevState) => {
-// 		  return{
-// 			 modalOpen: !prevState.modalOpen
-// 		  }
-// 	   })
-// 	}
 
 const authenticatedOptions = (
 	<>
@@ -50,15 +36,6 @@ const unauthenticatedOptions = (
 	</>
 )
 
-// const alwaysOptions = (
-// 	<>
-// 		<Nav.Link className="ms-4">
-// 			<Link to='/' style={linkStyle}>
-// 				Home
-// 			</Link>
-// 		</Nav.Link>
-// 	</>
-// )
 
 const Header = ({ user }) => (
 	<Navbar collapseOnSelect={true} className='nav-bar p-0' variant='dark' expand='xl'>
@@ -73,11 +50,6 @@ const Header = ({ user }) => (
 		<Navbar.Toggle aria-controls='basic-navbar-nav' className='me-4' />
 		<Navbar.Collapse id='basic-navbar-nav'>
 			<Nav className='nav justify-content-end me-5 nav-link' style={{ width: "100%" }}>
-				{/* <Nav.Item className="ms-4">
-					<Nav.Link eventKey="1" as={Link} to='/exhibits/new' className="nav-item">
-						Add an Exhibit
-					</Nav.Link>
-				</Nav.Item> */}
 				<Nav.Item className="ms-4">
 					<Nav.Link eventKey="1" as={Link} to='/' className="nav-item">
 						Home

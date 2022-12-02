@@ -75,9 +75,6 @@ const ExhibitShow = ({ user, msgAlert }) => {
     }
 
     if (deleted) navigate('/exhibits')
-    // if (deleted) {
-    //     navigate('/exhibits')
-    // }
 
     return (
         <div className='exhibit-card'>

@@ -31,7 +31,7 @@ const ExhibitIndex = ({ user, msgAlert }) => {
     const allExhibitsJSX = allExhibits.map(exhibit => {
         return (
             <Card className="exhibit-index text-center mb-3 d-flex flex-column">
-                <Card.Header>Featured</Card.Header>
+                <Card.Header></Card.Header>
                 <Card.Body>
                     <Card.Title>{exhibit.name}</Card.Title>
                     <Card.Text>
@@ -40,7 +40,7 @@ const ExhibitIndex = ({ user, msgAlert }) => {
                     {/* <Button variant="primary">Go somewhere</Button> */}
                     <Link to={`/exhibits/${exhibit._id}`} state={exhibit} className="exhibit-button">Exhibit</Link>
                 </Card.Body>
-                <Card.Footer className="text-muted">2 days ago</Card.Footer>
+                <Card.Footer className="text-muted"></Card.Footer>
             </Card>
 
         )
@@ -64,8 +64,6 @@ const ExhibitIndex = ({ user, msgAlert }) => {
                             <CreateExhibitModal user={user} msgAlert={msgAlert} triggerRefresh={() => setUpdated(prev => !prev)}/>
                             </div>
                         : null }
-                    {/* <Button eventKey="1" as={Link} to={CreateExhibitModal} className="nav-item">Go somewhere</Button> */}
-                    {/* <Link to={``} state={} className="exhibit-button">Exhibit</Link> */}
                 </Card.Body>
                 <Card.Footer className="text-muted"></Card.Footer>
             </Card>
