@@ -45,7 +45,7 @@ const Header = ({ user }) => (
 			</Link>
 		</Navbar.Brand>
 		{user &&
-			<span className='welcome-nav item ms-1'>Welcome, {user.email}</span>
+			<span className='welcome-nav item ms-1'>Enjoy your visit to our site!</span>
 		}
 		<Navbar.Toggle aria-controls='basic-navbar-nav' className='me-4' />
 		<Navbar.Collapse id='basic-navbar-nav'>
