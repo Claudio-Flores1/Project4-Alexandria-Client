@@ -73,6 +73,13 @@ function CreateExhibitModal(props) {
                     />
                     <input
                         type='text'
+                        value={exhibit.info}
+                        placeholder="Information"
+                        name='info'
+                        onChange={handleChange}
+                    />
+                    <input
+                        type='text'
                         value={exhibit.picture}
                         placeholder="Link to Picture"
                         name='picture'

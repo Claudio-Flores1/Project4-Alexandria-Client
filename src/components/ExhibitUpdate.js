@@ -15,6 +15,12 @@ const ExhibitUpdate = ({ exhibit, handleChange, handleUpdateExhibit }) => {
             name='date' 
             onChange={handleChange} 
             />
+            <input 
+            value={exhibit.info}
+            placeholder='Exhibit Info'
+            name='info' 
+            onChange={handleChange} 
+            />
              <input 
              
             value={exhibit.artist}
@@ -26,6 +32,12 @@ const ExhibitUpdate = ({ exhibit, handleChange, handleUpdateExhibit }) => {
             value={exhibit.picture}
             placeholder='https://i.imgur.com/exhibitImage.jpg'
             name='picture' 
+            onChange={handleChange} 
+            />
+             <input  
+            value={exhibit.museum}
+            placeholder='Museum name'
+            name='museum' 
             onChange={handleChange} 
             />
 			<button onClick={handleUpdateExhibit}>Update Exhibit</button>
