@@ -1,6 +1,6 @@
 let apiUrl
 const apiUrls = {
-	production: '<replace_with_deployed_api_url>',
+	production: 'https://alexandria-app.fly.dev/',
 	development: 'http://localhost:8000',
 }
 
