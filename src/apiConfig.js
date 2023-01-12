@@ -1,7 +1,7 @@
 let apiUrl
 const apiUrls = {
 	production: 'https://alexandria-app.fly.dev/',
-	development: 'http://localhost:8000',
+	development: 'http://localhost:8080',
 }
 
 if (window.location.hostname === 'localhost') {
