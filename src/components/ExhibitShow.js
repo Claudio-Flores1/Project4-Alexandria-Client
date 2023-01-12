@@ -26,7 +26,7 @@ const ExhibitShow = ({ user, msgAlert }) => {
                     variant: 'danger'
                 })
             })
-    }, [])
+    }, [id, msgAlert, user])
 
     const toggleShowUpdate = () => {
         setIsUpdateShown(prevUpdateShown => !prevUpdateShown)

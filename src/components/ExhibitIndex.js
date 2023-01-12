@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { exhibitIndex } from '../api/exhibit'
-import Button from 'react-bootstrap/Button'
+// import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 import CreateExhibitModal from './ExhibitCreate'
 
@@ -9,7 +9,7 @@ import CreateExhibitModal from './ExhibitCreate'
 const ExhibitIndex = ({ user, msgAlert }) => {
 
     const [allExhibits, setAllExhibits] = useState([])
-    const [updated, setUpdated] = useState(false)
+    const [ setUpdated] = useState(false)
 
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const ExhibitIndex = ({ user, msgAlert }) => {
                     variant: 'danger'
                 })
             })
-    }, [])
+    }, [msgAlert, user])
 
     const allExhibitsJSX = allExhibits.map(exhibit => {
         return (
